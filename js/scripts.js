@@ -45,12 +45,17 @@ $(document).ready(function() {
       $("#joke2").hide();
     }
 
-    if (inputJoke == 1) {
-      $("#joke1").fadeIn();
+    if (inputJoke == "blank") {
+      $("#joke1").hide();
       $("#joke2").hide();
+      $(".cSharp").hide();
+      $(".ruby").hide();
+      $(".python").hide();
+      $(".sorry").fadeIn();
+      alert("You didn't tell us if you like jokes!")
     }
 
-    else if (inputJoke == 2) {
+    else if (inputJoke == "2") {
       $("#joke1").hide();
       $("#joke2").fadeIn();
     }
@@ -60,6 +65,36 @@ $(document).ready(function() {
       $("#joke2").hide();
     }
 
+    if (inputThink == "blank") {
+      alert("You didn't think fast!")
+      $(".cSharp").hide();
+      $(".ruby").hide();
+      $(".python").hide();
+      $(".sorry").fadeIn();
+      $("#joke1").hide();
+      $("#joke2").hide();
+    }
+    
+    else if (inputThink == 1) {
+     $("div#joke1").removeClass();
+     $("div#joke1").addClass("jokeyellow");
+     $("div#joke2").removeClass();
+     $("div#joke2").addClass("jokeyellow");
+    }
+
+    else if (inputThink == 2) {
+      $("div#joke1").removeClass();
+      $("div#joke1").addClass("jokeblue");
+      $("div#joke2").removeClass();
+      $("div#joke2").addClass("jokeblue");
+    }
+
+    else if (inputThink == 3) {
+      $("div#joke1").removeClass();
+      $("div#joke1").addClass("jokeorange");
+      $("div#joke2").removeClass();
+      $("div#joke2").addClass("jokeorange");
+    }
 
   });
 

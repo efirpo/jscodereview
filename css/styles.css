@@ -21,10 +21,6 @@ img {
   font-weight: bold;
   }
 
-#survey {
- 
-  }
-
 .cSharp, .ruby, .python {
   display: none;
   }
@@ -37,5 +33,16 @@ img {
 #joke1, #joke2 {
   display: none;
   padding: 2vh;
-  background-color: cyan;
   }
+
+.jokeblue {
+  background-color: darkcyan;
+}
+  
+.jokeyellow {
+  background-color: #FFF6b5;
+}
+
+.jokeorange {
+  background-color: #FFE0b5;
+}
