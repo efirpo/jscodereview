@@ -24,15 +24,15 @@ $(document).ready(function() {
 
     else if (jQuery.inArray (inputResult, ["222", "221", "212", "122", "223", "232", "322"]) >=0) {
       $(".cSharp").hide();
-      $(".ruby").fadeIn();
-      $(".python").hide();
+      $(".ruby").hide();
+      $(".python").fadeIn();
       $(".sorry").hide();
     }
 
     else if (jQuery.inArray (inputResult, ["333", "331", "313", "133", "332", "323", "233"]) >=0) {
       $(".cSharp").hide();
-      $(".ruby").hide();
-      $(".python").fadeIn();
+      $(".ruby").fadeIn();
+      $(".python").hide();
       $(".sorry").hide();
     }
 
@@ -53,6 +53,11 @@ $(document).ready(function() {
       $(".python").hide();
       $(".sorry").fadeIn();
       alert("You didn't tell us if you like jokes!")
+    }
+
+    else if (inputJoke == "1") {
+      $("#joke1").fadeIn();
+      $("#joke2").hide();
     }
 
     else if (inputJoke == "2") {
