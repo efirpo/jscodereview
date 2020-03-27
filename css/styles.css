@@ -23,6 +23,10 @@ img {
 
 .cSharp, .ruby, .python {
   display: none;
+  position: absolute;
+  width: 40vw;
+  left: 50%;
+  transform: translate(-50%);
   }
 
 .sorry {
@@ -30,10 +34,14 @@ img {
   color: darkred;
 }
 
-#joke1, #joke2, #joke3 {
+.joke1, .joke2, .joke3 {
   display: none;
   padding: 2vh;
   margin-bottom: 4vh;
+  position: fixed;
+  width: 40vw;
+  left: 50%;
+  transform: translate(-50%);
   }
 
 .jokeblue {
@@ -52,6 +60,10 @@ img {
   background-color: lightblue;
   padding: 2vw;
   margin-bottom: 4vh;
+  position: absolute;
+  width: 40vw;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 #intro {
