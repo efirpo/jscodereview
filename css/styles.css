@@ -33,6 +33,7 @@ img {
 #joke1, #joke2, #joke3 {
   display: none;
   padding: 2vh;
+  margin-bottom: 4vh;
   }
 
 .jokeblue {
@@ -45,4 +46,15 @@ img {
 
 .jokeorange {
   background-color: #FFE0b5;
+}
+
+#progSurvey {
+  background-color: lightblue;
+  padding: 2vw;
+  margin-bottom: 4vh;
+}
+
+#intro {
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
