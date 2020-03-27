@@ -93,30 +93,21 @@ $(document).ready(function() {
     }
     
     else if (inputThink == 1) {
-      $("div.joke1").removeClass();
-      $("div.joke1").addClass("jokeyellow");
-      $("div.joke2").removeClass();
-      $("div.joke2").addClass("jokeyellow");
-      $("div.joke3").removeClass();
-      $("div.joke3").addClass("jokeyellow");
+      $("div.joke1").attr("id", "jokeyellow");
+      $("div.joke2").attr("id", "jokeyellow");
+      $("div.joke3").attr("id", "jokeyellow");
     }
 
     else if (inputThink == 2) {
-      $("div.joke1").removeClass();
-      $("div.joke1").addClass("jokeblue");
-      $("div.joke2").removeClass();
-      $("div.joke2").addClass("jokeblue");
-      $("div.joke3").removeClass();
-      $("div.joke3").addClass("jokeblue");
+      $("div.joke1").attr("id", "jokeblue");
+      $("div.joke2").attr("id", "jokeblue");
+      $("div.joke3").attr("id", "jokeblue");
     }
 
     else if (inputThink == 3) {
-      $("div.joke1").removeClass();
-      $("div.joke1").addClass("jokeorange");
-      $("div.joke2").removeClass();
-      $("div.joke2").addClass("jokeorange");
-      $("div.joke3").removeClass();
-      $("div.joke3").addClass("jokeorange");
+      $("div.joke1").attr("id", "jokeorange");
+      $("div.joke2").attr("id", "jokeorange");
+      $("div.joke3").attr("id", "jokeorange");
     }
 
   });

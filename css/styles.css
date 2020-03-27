@@ -44,15 +44,15 @@ img {
   transform: translate(-50%);
   }
 
-.jokeblue {
+#jokeblue {
   background-color: darkcyan;
 }
   
-.jokeyellow {
+#jokeyellow {
   background-color: #FFF6b5;
 }
 
-.jokeorange {
+#jokeorange {
   background-color: #FFE0b5;
 }
 
