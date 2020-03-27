@@ -43,41 +43,51 @@ $(document).ready(function() {
       $(".sorry").fadeIn();
       $("#joke1").hide();
       $("#joke2").hide();
+      $("#joke3").hide();
     }
 
     if (inputJoke == "blank") {
       $("#joke1").hide();
       $("#joke2").hide();
+      $("#joke3").hide();
       $(".cSharp").hide();
       $(".ruby").hide();
       $(".python").hide();
       $(".sorry").fadeIn();
-      alert("You didn't tell us if you like jokes!")
     }
 
     else if (inputJoke == "1") {
       $("#joke1").fadeIn();
       $("#joke2").hide();
+      $("#joke3").hide();
     }
 
     else if (inputJoke == "2") {
       $("#joke1").hide();
       $("#joke2").fadeIn();
+      $("#joke3").hide();
+    }
+
+    else if (inputJoke == "3") {
+      $("#joke1").hide();
+      $("#joke2").hide();
+      $("#joke3").fadeIn();
     }
 
     else {
       $("#joke1").hide();
       $("#joke2").hide();
+      $("#joke3").hide();
     }
 
     if (inputThink == "blank") {
-      alert("You didn't think fast!")
       $(".cSharp").hide();
       $(".ruby").hide();
       $(".python").hide();
       $(".sorry").fadeIn();
       $("#joke1").hide();
       $("#joke2").hide();
+      $("#joke3").hide();
     }
     
     else if (inputThink == 1) {
@@ -85,6 +95,8 @@ $(document).ready(function() {
      $("div#joke1").addClass("jokeyellow");
      $("div#joke2").removeClass();
      $("div#joke2").addClass("jokeyellow");
+     $("div#joke3").removeClass();
+     $("div#joke3").addClass("jokeyellow");
     }
 
     else if (inputThink == 2) {
@@ -92,6 +104,8 @@ $(document).ready(function() {
       $("div#joke1").addClass("jokeblue");
       $("div#joke2").removeClass();
       $("div#joke2").addClass("jokeblue");
+      $("div#joke3").removeClass();
+     $("div#joke3").addClass("jokeblue");
     }
 
     else if (inputThink == 3) {
@@ -99,6 +113,8 @@ $(document).ready(function() {
       $("div#joke1").addClass("jokeorange");
       $("div#joke2").removeClass();
       $("div#joke2").addClass("jokeorange");
+      $("div#joke3").removeClass();
+      $("div#joke3").addClass("jokeorange");
     }
 
   });

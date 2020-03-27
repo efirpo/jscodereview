@@ -30,7 +30,7 @@ img {
   color: darkred;
 }
 
-#joke1, #joke2 {
+#joke1, #joke2, #joke3 {
   display: none;
   padding: 2vh;
   }
