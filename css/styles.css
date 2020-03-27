@@ -8,6 +8,7 @@
  img {
    width: 20vw;
    float: left;
+   margin-right: 2vw;
  }
 
  .jumbotron {
@@ -25,7 +26,7 @@
 }
 
 #cSharp {
-
+  display: none;
 }
 
 #ruby {
@@ -33,5 +34,5 @@
 }
 
 #python {
-  display:none;
+  display: none;
 }
