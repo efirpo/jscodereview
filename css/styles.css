@@ -4,6 +4,10 @@
    color: #003349;
    font-size: 3vh;
  }
+ 
+ img {
+   width: 20vw;
+ }
 
  .jumbotron {
    background-color: #84CfD1;
@@ -13,4 +17,20 @@
 .emph {
   font-variant: small-caps;
   font-weight: bold;
+}
+
+#survey {
+  width: 40vw;
+}
+
+#cSharp {
+  display: none;
+}
+
+#ruby {
+  
+}
+
+#python {
+  display:none;
 }
