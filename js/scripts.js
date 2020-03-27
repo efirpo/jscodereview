@@ -13,26 +13,69 @@ $(document).ready(function() {
     var inputJoke = $("#jokeResult").val();
     
     console.log(inputGoal, inputBrackets, inputReptile, inputThink, inputJoke);
+    var inputResult = (inputGoal  + inputBrackets + inputReptile)
 
-    if (inputGoal == 1 && inputBrackets == 1 || inputBrackets == 1 && inputReptile == 1 || inputGoal == 1 && inputReptile == 1) {
-      $(".cSharp").show();
+    if (jQuery.inArray (inputResult, ["111", "112", "121", "211", "113", "131", "311"]) >=0) {
+      $(".cSharp").fadeIn();
       $(".ruby").hide();
       $(".python").hide();
+      $(".sorry").hide();
     }
 
-    else if (inputGoal == 2 && inputBrackets == 2 || inputBrackets == 2 && inputReptile == 2 || inputGoal == 2 && inputReptile == 2) {
+    else if (jQuery.inArray (inputResult, ["222", "221", "212", "122", "223", "232", "322"]) >=0) {
       $(".cSharp").hide();
-      $(".ruby").show();
+      $(".ruby").fadeIn();
       $(".python").hide();
+      $(".sorry").hide();
     }
 
-    else if (inputGoal == 3 && inputBrackets == 3 || inputBrackets == 3 && inputReptile == 3 || inputGoal == 3 && inputReptile == 3) {
-      $(".csharp").hide();
+    else if (jQuery.inArray (inputResult, ["333", "331", "313", "133", "332", "323", "233"]) >=0) {
+      $(".cSharp").hide();
       $(".ruby").hide();
-      $(".python").show();
+      $(".python").fadeIn();
+      $(".sorry").hide();
     }
 
-    else {alert("NOPE")}
+    else {
+      $(".cSharp").hide();
+      $(".ruby").hide();
+      $(".python").hide();
+      $(".sorry").fadeIn();
+    }
+
+
+
+    
+    // if,else statements commented out to switch functionality to array.
+
+   // if (inputGoal == 1 && inputBrackets == 1 || inputBrackets == 1 && inputReptile == 1 || inputGoal == 1 && inputReptile == 1) {
+   //   $(".cSharp").fadeIn();
+   //   $(".ruby").hide();
+   //   $(".python").hide();
+   //   $(".sorry").hide();
+   // }
+
+   // else if (inputGoal == 2 && inputBrackets == 2 || inputBrackets == 2 && inputReptile == 2 || inputGoal == 2 && inputReptile == 2) {
+   //   $(".cSharp").hide();
+   //   $(".ruby").fadeIn();
+   //   $(".python").hide();
+   //   $(".sorry").hide();
+   // }
+
+   // else if (inputGoal == 3 && inputBrackets == 3 || inputBrackets == 3 && inputReptile == 3 || inputGoal == 3 && inputReptile == 3) {
+   //   $(".cSharp").hide();
+   //   $(".ruby").hide();
+   //   $(".python").fadeIn();
+   //   $(".sorry").hide();
+   // }
+
+   // else {
+   //   $(".cSharp").hide();
+   //   $(".ruby").hide();
+   //   $(".python").hide();
+   //   $(".sorry").fadeIn();
+   // }
+
   });
 
 });
