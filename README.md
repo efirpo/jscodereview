@@ -18,11 +18,11 @@ Open index.html in the web browser of your choice.
 
 ## Technologies Used
 
-HTML
-CSS
-BootStrap Style Library
-JavaScript
-jQuery Script Library
+#### HTML
+#### CSS
+#### BootStrap Style Library
+#### JavaScript
+#### jQuery Script Library
 
 ## Legal
 

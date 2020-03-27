@@ -1,1 +1,16 @@
- 
+ body {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   background-color: lightcyan;
+   color: #003349;
+   font-size: 3vh;
+ }
+
+ .jumbotron {
+   background-color: #84CfD1;
+   color: #003349;
+ }
+
+.emph {
+  font-variant: small-caps;
+  font-weight: bold;
+}
