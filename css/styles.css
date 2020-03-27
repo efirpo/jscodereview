@@ -25,14 +25,18 @@ img {
  
   }
 
-#cSharp {
-  display: ;
-  }
-
-#ruby {
+.cSharp {
   display: none;
   }
 
-#python {
+.ruby {
   display: none;
   }
+
+.python {
+  display: none;
+  }
+
+.sorry {
+  display: none;
+}
