@@ -41,6 +41,8 @@ $(document).ready(function() {
       $(".ruby").hide();
       $(".python").hide();
       $(".sorry").fadeIn();
+      $("#joke1").hide();
+      $("#joke2").hide();
     }
 
     if (inputJoke == 1) {

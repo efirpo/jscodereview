@@ -25,6 +25,17 @@ img {
  
   }
 
-.cSharp, .ruby, .python, .sorry, #joke1, #joke2 {
+.cSharp, .ruby, .python {
   display: none;
+  }
+
+.sorry {
+  display: none;
+  color: darkred;
+}
+
+#joke1, #joke2 {
+  display: none;
+  padding: 2vh;
+  background-color: cyan;
   }
