@@ -11,9 +11,11 @@ $(document).ready(function() {
     var inputReptile = $("#reptileResult").val();
     var inputThink = $("#thinkResult").val();
     var inputJoke = $("#jokeResult").val();
-    
-    console.log(inputGoal, inputBrackets, inputReptile, inputThink, inputJoke);
-    var inputResult = (inputGoal  + inputBrackets + inputReptile)
+  
+  //  commented out for the sake of clean code.  
+  //  console.log(inputGoal, inputBrackets, inputReptile, inputThink, inputJoke);
+  
+  var inputResult = (inputGoal  + inputBrackets + inputReptile)
 
     if (jQuery.inArray (inputResult, ["111", "112", "121", "211", "113", "131", "311"]) >=0) {
       $(".cSharp").fadeIn();
@@ -105,7 +107,7 @@ $(document).ready(function() {
       $("div#joke2").removeClass();
       $("div#joke2").addClass("jokeblue");
       $("div#joke3").removeClass();
-     $("div#joke3").addClass("jokeblue");
+      $("div#joke3").addClass("jokeblue");
     }
 
     else if (inputThink == 3) {

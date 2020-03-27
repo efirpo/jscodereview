@@ -16,11 +16,6 @@ img {
    color: #003349;
   }
 
-.emph {
-  font-variant: small-caps;
-  font-weight: bold;
-  }
-
 .cSharp, .ruby, .python {
   display: none;
   }
@@ -58,3 +53,8 @@ img {
   padding-left: 4vw;
   padding-right: 4vw;
 }
+
+.emph {
+  font-variant: small-caps;
+  font-weight: bold;
+  }
