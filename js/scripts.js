@@ -1,3 +1,4 @@
+// comment for sake of personal reference.
 // value 1 = C#, value 2 = Python, value 3 = Ruby
 
 $(document).ready(function() {
@@ -16,6 +17,8 @@ $(document).ready(function() {
   //  console.log(inputGoal, inputBrackets, inputReptile, inputThink, inputJoke);
   
   var inputResult = (inputGoal  + inputBrackets + inputReptile)
+
+    // Will show results based upon survey choices.
 
     if (jQuery.inArray (inputResult, ["111", "112", "121", "211", "113", "131", "311"]) >=0) {
       $(".cSharp").fadeIn();
@@ -47,6 +50,8 @@ $(document).ready(function() {
       $("#joke2").hide();
       $("#joke3").hide();
     }
+    
+    // Will choose the right joke to put on the bottom of the results.
 
     if (inputJoke == "blank") {
       $("#joke1").hide();
@@ -82,14 +87,16 @@ $(document).ready(function() {
       $("#joke3").hide();
     }
 
+    // Will change color of joke background depending on result of thinkChoice form question.
+
     if (inputThink == "blank") {
       $(".cSharp").hide();
       $(".ruby").hide();
       $(".python").hide();
-      $(".sorry").fadeIn();
       $("#joke1").hide();
       $("#joke2").hide();
       $("#joke3").hide();
+      $(".sorry").fadeIn();
     }
     
     else if (inputThink == 1) {
