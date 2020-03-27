@@ -25,18 +25,6 @@ img {
  
   }
 
-.cSharp {
+.cSharp, .ruby, .python, .sorry, #joke1, #joke2 {
   display: none;
   }
-
-.ruby {
-  display: none;
-  }
-
-.python {
-  display: none;
-  }
-
-.sorry {
-  display: none;
-}

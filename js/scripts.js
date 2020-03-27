@@ -43,9 +43,27 @@ $(document).ready(function() {
       $(".sorry").fadeIn();
     }
 
+    if (inputJoke == 1) {
+      $("#joke1").fadeIn();
+      $("#joke2").hide();
+    }
+
+    else if (inputJoke == 2) {
+      $("#joke1").hide();
+      $("#joke2").fadeIn();
+    }
+
+    else {
+      $("#joke1").hide();
+      $("#joke2").hide();
+    }
 
 
-    
+  });
+
+});
+
+
     // if,else statements commented out to switch functionality to array.
 
    // if (inputGoal == 1 && inputBrackets == 1 || inputBrackets == 1 && inputReptile == 1 || inputGoal == 1 && inputReptile == 1) {
@@ -76,6 +94,4 @@ $(document).ready(function() {
    //   $(".sorry").fadeIn();
    // }
 
-  });
-
-});
+ 
