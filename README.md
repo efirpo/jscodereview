@@ -6,7 +6,7 @@
 
 ## Description
 
-This website is a form survey to determine which programming language would be best suited to the user. Designed to test functionality of JavaScript code basics.
+This website is a form survey to determine which programming language would be best suited to the user. Designed to test functionality of JavaScript code basics and branching capabilities based upon user input. Designed and built in one work day, after one week of training in the required skills. 
 
 ## Setup
 
